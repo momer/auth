@@ -38,6 +38,7 @@ var LoginT *template.Template
 
 // TODO: Convert error and login templates to files
 // then add their filenames to config file.
+// TODO: add css to error and login templates.
 func init() {
 	var err error
 	if ErrT, err = template.New("error").Parse(`<!DOCTYPE html>
