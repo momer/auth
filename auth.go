@@ -115,7 +115,7 @@ func New(c map[string]string) (Auth, error) {
 		return Auth{}, errors.New(msg)
 	}
 	membersArr := strings.Split(membersStr, ";")
-	var members map[string]bool
+	members := map[string]bool{}
 	for _, member := range membersArr {
 		member = strings.TrimSpace(member)
 		if member != "" {
